@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+
+
+    <style>
+table{
+    width: 450px;
+}
+ tr td{
+ border: 2px solid gray;
+ }
+
+    </style>
+</head>
+<body>
+    
+<form method="post" action="contact.php">
+    <table>
+        <tr>
+            <th colspan="2"> REGISTRATION FORM</th>
+        </tr>
+    <tr>
+        <td><label>First Name</label> </td>
+        <td><input type="text" placeholder="Enter you first name" name="fname" maxlength="50"></td>
+    </tr>
+    <tr>
+        <td><label>Last name</label></td>
+        <td><input type="text" placeholder="Enter you Last name" name="lname" maxlength="20"></td>
+    </tr>
+    <tr>
+        <td><label>Gender</label></td>
+        <td>
+            <select>
+                <option value="M">MALE</option>
+                <option value="F">FEMALE</option>
+                <option value="N">NOT SPECIFIED</option>
+
+            </select>
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" placeholder="Enter your email here"></td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td><input type="password" name="password" placeholder="Enter your Password here"></td>
+    </tr>
+
+
+
+    <tr>
+        <td>Province</td>
+        <td>
+            <input type="radio" name="province" value="p">Punjab
+            <input type="radio" name="province" value="S">SINDH
+            <input type="radio" name="province" value="K">KPK
+            <input type="radio" name="province" value="g">Gilgit
+
+        </td>
+    </tr>
+    <tr>
+        <td>EDUCATION</td>
+        <td>
+            <input type="checkbox" name="fsc" value="fsc"> FSC
+            <input type="checkbox" name="Bachelors" value="Bachelors"> Bachelors
+            <input type="checkbox" name="Masters" value="Masters"> Masters
+
+        </td>
+    </tr>
+    <tr>
+        <td>Comments</td>
+        <td>
+            <textarea name="comments" value="comm" placeholder=" Add comments"></textarea>
+        </td>
+    </tr>
+    <tr>
+     
+        <td> 
+            <input type="submit">
+        </td>
+    </tr>
+
+</table>
+</form>
+</body>
+</html>
